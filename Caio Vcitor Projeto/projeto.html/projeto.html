@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Orçamento de Móveis</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="background">
+        <h1>Orçamento de Móveis</h1>
+        <nav>
+            <ul>
+                <div class="info-box">
+                <li><a href="index.html">Formulário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form_bold">
+            <span class="text"><p>Faça seu orçamento conosco!</p></span>
+            <form method="POST" action="index.php">
+                <p><input class="campo" type="text" name="lojista" required placeholder="Lojista"></p>
+                <p><input class="campo" type="text" name="Nome" required placeholder="Nome"></p>
+                <p><input class="campo" type="number" name="Número" required placeholder="Telefone"></p>
+                <p><input class="campo" type="E-mail" name="E-mail" required placeholder="E-mail"></p>
+                
+    <span class="text_2"><p>Ambiente</p></span>
+
+                    <p><input type="text" name="ambiente" placeholder="Ambiente" class="campo" ></p>
+                    <p><input type="text" name="qtd_ambiente" placeholder="Quantidade do Ambiente" class="campo"><br></p>
+                    <span class="text_3"><p>"Caso o ambiente seja igual, coloque aqui a quantidades de ambientes iguais".</p></span>
+                    <p><input type="text" name="obs_ambiente" placeholder="Observações sobre os materiais do ambiente" class="campo"></p>
+
+            <span class="text_2"><p>Padrões de MDF</p></span>
+
+               <p>
+                    <select name="caixaria" placeholder="Selecione" class="campo">
+                        <option>Caixaria</option>
+                       
+                        <option>Azul Secreto</option>
+                        <option>Branco</option>
+                        <option>Branco Trama</option>
+                        <option>Branco Ultra</option>
+                        <option>Cinza sagrado</option>
+                        <option>Gianduia</option>
+                        <option>Gobi</option>
+                        <option>Grafite</option>
+                        <option>Ibiza</option>
+                        <option>Inhotim</option>
+                        <option>Itapuã</option>
+                        <option>Lana</option>
+                        <option>Líneo Têxtil</option>
+                        <option>Madeira Curinga</option>
+                        <option>Nogueira Caiena</option>
+                        <option>Nogueira Thar</option>
+                        <option>Noturno</option>
+                        <option>Opala</option>
+                        <option>Rosa Glamour</option>
+                        <option>Titânio</option>
+                        <option>Trama Preto</option>
+                    </select>
+                </p></span>
+
+                <p>
+                    <select name="caix_acab" placeholder="Selecione" class="campo">
+                        <option>Selecionar Acabamentos</option>
+                        <option>Frente Gavetas</option>
+                        <option>Portas</option>
+                        <option>Tamponamentos</option>
+                    </select>
+                </p>
+
+                <p>
+                    <select  name="acab_f_g" placeholder="Selecione" class="campo">
+                        <option>Acabamentos Frente Gavetas</option>
+                        <option>Azul Secreto</option>
+                        <option>Branco</option>
+                        <option>Branco Trama</option>
+                        <option>Branco Ultra</option>
+                        <option>Cinza sagrado</option>
+                        <option>Gianduia</option>
+                        <option>Gobi</option>
+                        <option>Grafite</option>
+                        <option>High Gloss Branco</option>
+                        <option>High Gloss Preto</option>
+                        <option>High Gloss Gianduia</option>
+                        <option>High Gloss Curinga</option>
+                        <option>High Gloss Titânio</option>
+                        <option>Ibiza</option>
+                        <option>Inhotim</option>
+                        <option>Itapuã</option>
+                        <option>Lana</option>
+                        <option>Líneo Têxtil</option>
+                        <option>Madeira Curinga</option>
+                        <option>Nogueira Caiena</option>
+                        <option>Nogueira Thar</option>
+                        <option>Noturno</option>
+                        <option>Opala</option>
+                        <option>Rosa Glamour</option>
+                        <option>Titânio</option>
+                        <option>Trama Preto</option>
+                    </select>
+                </p>
+
+                 <p> 
+                    <select  name="acab_p" placeholder="Selecione" class="campo">
+                        <option>Acabamentos Portas</option>
+                        <option>Azul Secreto</option>
+                        <option>Branco</option>
+                        <option>Branco Trama</option>
+                        <option>Branco Ultra</option>
+                        <option>Cinza sagrado</option>
+                        <option>Gianduia</option>
+                        <option>Gobi</option>
+                        <option>Grafite</option>
+                        <option>High Gloss Branco</option>
+                        <option>High Gloss Preto</option>
+                        <option>High Gloss Gianduia</option>
+                        <option>High Gloss Curinga</option>
+                        <option>High Gloss Titânio</option>
+                        <option>Ibiza</option>
+                        <option>Inhotim</option>
+                        <option>Itapuã</option>
+                        <option>Lana</option>
+                        <option>Líneo Têxtil</option>
+                        <option>Madeira Curinga</option>
+                        <option>Nogueira Caiena</option>
+                        <option>Nogueira Thar</option>
+                        <option>Noturno</option>
+                        <option>Opala</option>
+                        <option>Rosa Glamour</option>
+                        <option>Titânio</option>
+                        <option>Trama Preto</option>
+                    </select>
+                </p>
+
+                 <p>
+                    <select name="acab_p_v" placeholder="Selecione" class="campo">
+                        <option>Acabamento Portas de Vidro</option>
+                        <option>Espelho Cristal</option>
+                        <option>Incolor com Película</option>
+                        <option>Reflecta</option>
+                        <option>Refletivo Branco</option>
+                        <option>Refletivo Fume</option>
+                        <option>Vidro Branco</option>
+                        <option>Vidro Preto</option>
+                    </select>
+                </p>
+
+                 <span class="text_2"><p>
+                    <select name="P_25mm" placeholder="Selecione" class="campo">
+                        <option>Prancha 25mm</option>
+                        <option>Branco</option>
+                        <option>Branco Trama</option>
+                        <option>Branco Ultra</option>
+                        <option>Gianduia</option>
+                        <option>Itapuã</option>
+                        <option>Laca Automotiva</option>
+                        <option>Líneo Têxtil</option>
+                        <option>Madeira Curinga</option>
+                        <option>Titânio</option>
+                        <option>Trama Preto</option>
+                    </select>
+                </p>
+
+             <span class="text_2"><p>Tamburatos C/ Placas 06mm</p></span>
+
+                 <span class="text_2"><p>
+                    <select name="e_06mm" placeholder="Selecione" class="campo">
+                        <option>Espessura 06mm</option>
+                        <option>40mm</option>
+                        <option>50mm</option>
+                        <option>60mm</option>
+                    </select>
+                </p>
+
+                 <span class="text_2"><p>
+                    <select name="acab_06mm" placeholder="Selecione" class="campo">
+                        <option>Acabamento 06mm</option>
+                        <option>Branco</option>
+                        <option>Branco Trama</option>
+                        <option>Branco Ultra</option>
+                        <option>Gianduia</option>
+                        <option>Itapuã</option>
+                        <option>Laca Automotiva</option>
+                        <option>Líneo Têxtil</option>
+                        <option>Madeira Curinga</option>
+                        <option>Titânio</option>
+                        <option>Trama Preto</option>
+                    </select>
+                </p>
+
+                <p><input type="text" name="obs_06mm" placeholder="Observações placas 06mm" class="campo"></p>
+
+             <span class="text_2"><p>Tamburatos C/ Placas 15mm</p></span>
+
+                 <p>
+                    <select name="e_15mm" placeholder="Selecione" class="campo">
+                        <option>Espessura 15mm</option>
+                        <option>30mm</option>
+                        <option>45mm</option>
+                        <option>55mm</option>
+                    </select>
+                </p>
+
+                <p>
+                    <select name="acab_15mm" placeholder="Selecione" class="campo">
+                        <option>Acabamento 15mm</option>
+                        <option>Branco</option>
+                        <option>Branco Trama</option>
+                        <option>Branco Ultra</option>
+                        <option>Gianduia</option>
+                        <option>Itapuã</option>
+                        <option>Laca Automotiva</option>
+                        <option>Líneo Têxtil</option>
+                        <option>Madeira Curinga</option>
+                        <option>Titânio</option>
+                        <option>Trama Preto</option>
+                    </select>
+                </p>
+
+                <p><input type="text" name="obs_15mm" placeholder="Observações placas 15mm" class="campo"></p>
+
+             <span class="text_2"><p>Perfis Puxadores</p></span>
+
+                <p>
+                    <select name="puxador" placeholder="Selecione" class="campo">
+                        <option>Selecione o puxador</option>
+                        <option>2184 Grap</option>
+                        <option>1815 Encaixe</option>
+                        <option>Neocomponente (facetato)</option>
+                        <option>Puxador Tipo Y</option>
+                        <option>2233 Slim</option>
+                    </select>
+                </p>
+
+                <p> 
+                    <select name="acabamento_pux" placeholder="Selecione" class="campo">
+                        <option>Selecionar Acabamento Puxador</option>
+                        <option>Inox Escovado</option>
+                        <option>Anodizado Natural</option>
+                        <option>Branco</option>
+                        <option>Preto</option>
+                    </select>
+                </p>
+
+                <p> 
+                    <select name="acab_tamponamentos" placeholder="Selecione"  class="campo">
+                        <option>Acabamento Tamponamentos</option>
+                        <option>Azul Secreto</option>
+                        <option>Branco</option>
+                        <option>Branco Trama</option>
+                        <option>Branco Ultra</option>
+                        <option>Cinza sagrado</option>
+                        <option>Gianduia</option>
+                        <option>Gobi</option>
+                        <option>Grafite</option>
+                        <option>High Gloss Branco</option>
+                        <option>High Gloss Preto</option>
+                        <option>High Gloss Gianduia</option>
+                        <option>High Gloss Curinga</option>
+                        <option>High Gloss Titânio</option>
+                        <option>Ibiza</option>
+                        <option>Inhotim</option>
+                        <option>Itapuã</option>
+                        <option>Lana</option>
+                        <option>Líneo Têxtil</option>
+                        <option>Madeira Curinga</option>
+                        <option>Nogueira Caiena</option>
+                        <option>Nogueira Thar</option>
+                        <option>Noturno</option>
+                        <option>Opala</option>
+                        <option>Rosa Glamour</option>
+                        <option>Titânio</option>
+                        <option>Trama Preto</option>
+                    </select>
+                </p>
+
+             <span class="text_2"><p>Ferragens </p></span>
+
+                <p>
+                    <select name="ferragens" placeholder="Selecione" class="campo">
+                        <option>Selecionar Ferragens</option>
+                        <option>Corrediça Telescópica</option>
+                        <option>Corrediça Telescópica C/ Amortecedor</option>
+                        <option>Corrediça Oculta C/ Amortecedor</option>
+                        <option>Corrediça Gaveta Prime</option>
+                        <option>Dobradiça C/ Amortecedor</option>
+                        <option>Dobradiça Blum</option>
+                        <option>Dobradiça Hafele/FGV</option>
+                        <option>Dobradiça Blumotion</option>
+                        <option>Pistão a Gás Força Normal</option>
+                        <option>Pistão a Gás Força Inversa</option>
+                        <option>Sistema de Correr Porta Ambiente</option>
+                        <option>Sistema de Correr Trilho E (FGVDN80)</option>
+                    </select>
+                </p>
+
+                 <span class="text_2"><p>Acessórios</p></span>
+
+            <p> 
+                    <select name=acessorios" placeholder="Selecione" class="campo">
+                        <option>Selecionar Acessórios</option>
+                        <option>Fechadura</option>
+                        <option>Fecho Toque</option>
+                        <option>Pé Nivelador</option>
+                        <option>Porta Latas</option>
+                        <option>Porta Toalha</option>
+                        <option>Puxador</option>
+                        <option>Rodízio</option>
+                    </select>
+
+             <span class="text_2"><p>Arquivo do projeto</p>
+            <p><input type="file" class="botão" value="selecionar um arquivo"></p>
+            <div class="body_button"><button style=" padding: 16px 20px;
+                width: 700px;
+                cursor: pointer;
+                margin-left:auto;
+                margin-right: auto;
+                background: rgb(5, 163, 13);
+                text-decoration:none;
+                font-size: 20px;
+                color: white;
+                border-radius:5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;" name="button">Enviar</button></div></a>
+                      </form>
+                      <style>
+            .background{
+                background-color:rgb(57, 57, 61);
+                width: calc(100%-100px);
+            }
+            .form_bold{
+                background:rgb(186, 186, 197);
+                margin:0 auto;
+                width: 700px;
+                text-align: center;
+                padding: 50px;
+                border-radius: 10px;
+                box-shadow: rgb(1, 187, 41) 0 5px, rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+               margin-bottom: 80px;
+               margin-top: -60px;
+            }
+            .text{
+                text-align: center;
+                font-family: sans-serif;
+                font-size: 50px;
+                padding: 50px;
+                
+            }
+            .text_2{
+                 font-family: sans-serif;
+                 font-size: 20px;
+                 text-align: left;
+                 
+            }
+            .text_3{
+                font-family: sans-serif;
+                 font-size: 13px;
+                 text-align: left;
+            }
+            
+            /*.body_button {
+                padding: 16px 20px;
+                margin-left:auto;
+                margin-right: auto;
+                background: rgba(236,101,10,1);
+                text-decoration:none;
+                font-size: 20px;
+                color: white;
+                border-radius:5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }*/
+            .button:hover {
+                text-decoration:none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition-duration: 0.4s;
+                background-color: white;
+            }
+            .campo{
+                 width: 700px;
+                 padding:10px; 
+                 background-color:#ededed; 
+                 border:none;
+                 border-bottom: 2px solid grey;
+                 
+            }
+            .campo:focus{
+                border:none;
+                  border-bottom: 2px solid red;
+            }
+        </style>
+                 </form>
+    </section>
+</main>
+
+<aside>
+    <div class="info-box">
+    <div class="info-box">
+    <h2>Paleta de Cores</h2>
+        <p> A paleta de cores é uma seleção de cores escolhidas estrategicamente para serem usadas em harmonia para passar uma ideia! Desfrute disso na sua escolha</p>
+    </div>
+    <div class="info-box">
+     <div class="info-box">
+        <h2>Móveis em MDF</h2>
+        <p>O MDF é um material que apresenta algumas características interessantes, tais como:
+            <ul>
+                <li>É um material homogêneo, sem nós, o que o torna ideal para a produção de peças lisas e uniformes;</li>
+                <li>Possui alta resistência mecânica, o que permite a confecção de peças robustas e duráveis;</li>
+                <li>É um material versátil, que pode ser cortado, lixado, perfurado e pintado com facilidade, permitindo uma grande variedade de acabamentos.</li>
+            </ul>
+        </p>
+    </div>
+</aside>
+
+<footer>
+    <p>&copy; 2024 Orçamento de Móveis. Todos os direitos reservados.</p>
+</footer>
+</body>
+
+</html>
